@@ -10,7 +10,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         UTENTI u = new UTENTI();
-        string tipologiaUtente = Session["tipologiaUtente"].ToString();
+        string tipologiaUtente = Session["TipologiaUtente"].ToString();
 
         if (tipologiaUtente != "S") 
         { 

@@ -4,31 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="../../../../CSS/login_registrazione.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-         <table>
-                <tr> <%--login--%>
-                    <td colspan="2">
-                        <asp:Label ID="lblRegistrazione" runat="server" Text="REGISTRAZIONE"></asp:Label>
-                    </td>
-                </tr>
-                <tr><%--inserimento mail--%>
-                    <td> 
-                        <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                    </td>
-                </tr>                           
-                <tr>                   
-                    <td colspan="2">
-                        <asp:Button ID="btnRegistrazione" runat="server" Text="REGISTRATI" OnClick="btnRegistrazione_Click" />
-                    </td>
-                </tr>             
-            </table>
+        <div class="formLogin">
+            <asp:Label ID="lblLogin" runat="server" Text="REGISTRAZIONE"></asp:Label>
+            <%--inserimento mail--%>
+            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox><br />
+            <div class="conferma">
+                <asp:Button ID="btnLogin" runat="server" Text="REGISTRATI" OnClick="btnRegistrazione_Click" />
+            </div>
+        </div>
+
+
     </form>
 </body>
 </html>

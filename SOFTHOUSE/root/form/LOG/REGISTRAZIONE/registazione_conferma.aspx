@@ -6,10 +6,11 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="../../../../CSS/login_registrazione.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="formLogin">
             Inserisci nuovamente l'email: <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             <br />
             Inserisci il codice di conferma: <asp:TextBox ID="txtCodice" runat="server"></asp:TextBox>

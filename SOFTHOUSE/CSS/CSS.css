@@ -15,6 +15,8 @@ body {
     height: 40px;
     background-color: #2e3b41;
     color: #FFF;
+    width: 100vw;
+    position:absolute;
 }
 
 #footer {
@@ -122,12 +124,12 @@ voci {
 
 /*pagine child*/
 
-#menu{
-    float:left;
+#menu {
+    float: left;
     width: 20%;
     height: 609px;
     background-color: #546e7a;
-    padding-top: 150px;    
+    padding-top: 150px;
 }
 
 .bottoni {
@@ -147,13 +149,19 @@ voci {
     font-size: 16pt;
 }
 
-.aggiorna_griglia:hover {
-    cursor: pointer;
-}
+    .aggiorna_griglia:hover {
+        cursor: pointer;
+    }
 
 .contieni_bottoni {
     height: 400px;
     margin: auto 0;
+}
+
+.griglia {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 420px;
 }
 
 

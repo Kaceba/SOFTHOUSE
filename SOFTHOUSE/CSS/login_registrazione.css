@@ -1,7 +1,7 @@
 ﻿body {
     padding: 0;
     margin: 0;
-    background-image: url('../IMM/sfondo login.jpg');
+    background-image: url('../img/sfondo login.jpg');
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
@@ -14,7 +14,7 @@
     background-color: #2e3b41;
     font-family: Tahoma;
     color: #ffffff;
-    margin: 0;
+    margin: auto 0;
     display: block;
     padding-top: 150px;    
 }
@@ -60,4 +60,19 @@
 a {
     text-decoration: none;
     color: #ffffff;
+}
+
+#btnLogin {
+    width: 100px;
+    height: 30px;
+    background-color: #2e3b41;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.registrazione {
+    width: 150px;
+    text-align:center;
+    font-size: 11px;
+    margin: 0 auto;
 }

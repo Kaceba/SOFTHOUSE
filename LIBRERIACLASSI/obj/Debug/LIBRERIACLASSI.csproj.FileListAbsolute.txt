@@ -4,3 +4,9 @@ C:\Users\mrobz\Desktop\Junior Dev .NET\.SOFTWAREHOUSE\SOFTHOUSE\LIBRERIACLASSI\b
 C:\Users\mrobz\Desktop\Junior Dev .NET\.SOFTWAREHOUSE\SOFTHOUSE\LIBRERIACLASSI\bin\Debug\LIBRERIACLASSI.pdb
 C:\Users\mrobz\Desktop\Junior Dev .NET\.SOFTWAREHOUSE\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.dll
 C:\Users\mrobz\Desktop\Junior Dev .NET\.SOFTWAREHOUSE\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.pdb
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\bin\Debug\LIBRERIACLASSI.dll
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\bin\Debug\LIBRERIACLASSI.pdb
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.csproj.AssemblyReference.cache
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.csproj.CoreCompileInputs.cache
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.dll
+D:\e scuola\progetti\softhause\SOFTHOUSE\LIBRERIACLASSI\obj\Debug\LIBRERIACLASSI.pdb
