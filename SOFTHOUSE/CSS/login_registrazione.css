@@ -1,0 +1,63 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../IMM/sfondo login.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+}
+
+.formLogin {
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: #2e3b41;
+    font-family: Tahoma;
+    color: #ffffff;
+    margin: 0;
+    display: block;
+    padding-top: 150px;    
+}
+
+.login {
+    height: 300px;
+    width: 200px;
+   margin: auto;
+
+}
+
+#lblLogin {
+    font-size: 25pt;
+    font-weight: bold;
+    font-family: P22 Johnston Underground;
+    display: block;
+    text-align: center;
+}
+
+.lblDati {
+    text-align: right;
+}
+
+
+
+.tdNomi {
+    float: right;
+    margin: auto 0;
+}
+
+#txtEmail,#txtPswd {
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.conferma {
+    display: block;
+    margin: 0 auto;
+    font-size: 9px;
+    text-align: center;    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}

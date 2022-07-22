@@ -1,0 +1,159 @@
+﻿
+/*scheletro master page*/
+
+* {
+    font-family: Tahoma;
+}
+
+body {
+    padding: 0 0 0 0;
+    margin: 0;
+    background-color: #a6c5cf;
+}
+
+#header {
+    height: 40px;
+    background-color: #2e3b41;
+    color: #FFF;
+}
+
+#footer {
+    clear: both;
+    height: 200px;
+    width: 100%;
+    background-color: #2e3b41;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0px;
+    height: fit-content;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
+}
+
+
+/*header*/
+.login_registrazione {
+    float: right;
+    font-size: 9pt;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.logineregistrazione:hover {
+    font-weight: bold;
+}
+
+
+.creatori {
+    float: right;
+    font-size: 9pt;
+    font-style: italic;
+    margin-right: 10px;
+    justify-content: end;
+}
+
+/*menu di navigazione*/
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.icona {
+    width: 30px;
+    height: auto;
+}
+
+.menu {
+    float: left;
+    list-style: none;
+    margin: 5px 0 0 0;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    padding: 0 5px 0 0;
+}
+
+.lista {
+    display: none;
+    float: left;
+    list-style: none;
+    background-color: #445a64;
+    width: 170px;
+    padding: 0;
+}
+
+.spazio_voci {
+    padding: 5px 3px;
+    width: 170px;
+    margin: 0 auto;
+}
+
+voci {
+    float: left;
+    margin: 0;
+}
+
+.spazio_voci:hover {
+    background-color: #546e7a;
+    font-weight: bold;
+}
+
+/*.menu:hover ul {
+    display: block;
+    float: left;
+}*/
+
+
+
+
+.logo {
+    font-family: P22 Johnston Underground;
+    font-size: 25pt;
+    width: auto;
+    margin-left: 60px;
+}
+
+
+/*pagine child*/
+
+#menu{
+    float:left;
+    width: 20%;
+    height: 609px;
+    background-color: #546e7a;
+    padding-top: 150px;    
+}
+
+.bottoni {
+    border: 3px solid #a6c5cf;
+    border-radius: 3px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+    color: #a6c5cf;
+    font-size: 16pt;
+}
+
+.aggiorna_griglia {
+    border: none;
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+.aggiorna_griglia:hover {
+    cursor: pointer;
+}
+
+.contieni_bottoni {
+    height: 400px;
+    margin: auto 0;
+}
+
+

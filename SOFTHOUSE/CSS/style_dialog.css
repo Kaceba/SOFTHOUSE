@@ -1,0 +1,50 @@
+﻿.ui-widget-content { /*corpo pop up*/
+    border: 1px solid #20549d;
+    height: fit-content;
+}
+
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix { /* titolo pop up*/
+    background: #2e3b41;
+    color: #ffffff;
+    border: 1px solid #20549d;
+    font-family: 'P22 Johnston Underground';
+    text-align: center;
+}
+
+.ui-dialog-title {
+    
+    margin: auto auto;
+}
+
+
+.dialog {
+    padding: 5px;
+    background: #a6c5cf;
+    color: #ffffff;
+    border: 1px solid #20549d;
+    font-family: 'P22 Johnston Underground';
+    border: 1px solid #2e3b41;
+}
+
+.lblDati {
+    color: #ffffff;
+    float: right;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.txt {
+    font-family: Arial;
+    background-color: #a6c5cf;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+#BtnInserisci {
+    font-family: Arial;
+    background-color: #a6c5cf;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 30px auto;
+    width: 278px;
+}

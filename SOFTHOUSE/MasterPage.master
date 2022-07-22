@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="CSS/CSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <ul class="menu">
+                    <li id="icona_menu" class="icona">
+                        <img class="icona" src="/img/icona_menu.png" />
+                        <ul id="lista_menu" class="lista">
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciAzienda.aspx">Gestisci Azienda</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciClienti.aspx">Gestisci Clienti</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciCommesse.aspx">Gestisci Commesse</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciLavori.aspx">Gestisci Lavori</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciNews.aspx">Gestisci News</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciPersonale.aspx">Gestisci Personale</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciSpese.aspx">Gestisci Spese</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciTipoCommessa.aspx">Gestisci Tipo Commessa</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciTipoContratti.aspx">Gestisci Tipo Contratti</a></li>
+                          <li class="spazio_voci"><a class="voci" href="/root/form/GestisciTipoSpesa.aspx">Gestisci Tipo Spesa</a></li>                             
+                        </ul>
+                    </li>
+                </ul>
+                <asp:LinkButton ID="GestioneUtenti" runat="server" OnClick="GestioneUtenti_Click">Gestione Utenti</asp:LinkButton>
+            </div>
+            <div class="login_registrazione"><a class="logineregistrazione" href="root/form/LOG/LOGIN/Login.aspx">Login</a>|<a class="logineregistrazione" href="root/form/LOG/REGISTRAZIONE/Registrazione.aspx">Registrazione</a></div>
+                <div class="logo">soft<b>HAUSE</b></div>
+            </div>
+            <div id="body">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                AUTO BROVIA srl
+                <br />
+                Via le mani dagli occhi, 46
+                <br />
+                24100 Bergamo (BG)
+                <br />
+                CF/P.IVA: 28218932817
+            </div>
+        </div>
+    </form>
+</body>
+</html>
