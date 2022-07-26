@@ -16,13 +16,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div id="menu">
         <div class="contieni_bottoni">
-        <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
-        <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciAzienda.aspx">inserisci dati</a></div><br />
-        <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaAzienda.aspx">modifica dati</a></div><br />
-        <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
-        <div class="bottoni"><asp:Button ID="btnAggiornaGriglia" CssClass="aggiorna_griglia" runat="server" Text="Aggiorna griglia" OnClick="btnAggiornaGriglia_Click" /></div>
-    </div>
+            <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+            <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciAzienda.aspx">inserisci dati</a></div>
+            <br />
+            <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaAzienda.aspx">modifica dati</a></div>
+            <br />
+            <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
+            <div class="bottoni">
+                <asp:Button ID="btnAggiornaGriglia" CssClass="aggiorna_griglia" runat="server" Text="Aggiorna griglia" OnClick="btnAggiornaGriglia_Click" /></div>
         </div>
+    </div>
+    <%--griglia--%>
     <asp:GridView ID="griglia" CssClass="griglia" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanged="griglia_SelectedIndexChanged" DataKeyNames="CodiceAzienda"></asp:GridView>
 
 </asp:Content>

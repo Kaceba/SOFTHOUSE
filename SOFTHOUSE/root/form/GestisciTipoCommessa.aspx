@@ -9,29 +9,33 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
     <script src="../../JS/JS.js"></script>
     <%--css--%>
-    <%--<link href="../../../CSS/CSS.css" rel="stylesheet" />--%>
+    <link href="../../../CSS/CSS.css" rel="stylesheet" />
 
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+    <div id="menu">
+        <div class="contieni_bottoni">
+            <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+            <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciTipoCommessa.aspx">Inserisci Dati</a></div>
+            <br />
+            <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaTipoCommessa.aspx">Modifica Dati</a></div>
+            <br />
+            <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
+            <div class="bottoni">
+                <asp:Button ID="aggiornaGriglia"  CssClass="aggiorna_griglia" runat="server" Text="Aggiorna griglia" OnClick="aggiornaGriglia_Click" />
+            </div>
+        </div>
+    </div>
+
+
 
     <%--Griglia per visualizzare i dati--%>
 
-    <asp:GridView ID="griglia" runat="server" DataKeyNames="CodiceTipoCommessa" OnSelectedIndexChanged="griglia_SelectedIndexChanged">
+    <asp:GridView ID="griglia" CssClass="griglia" runat="server" DataKeyNames="CodiceTipoCommessa" OnSelectedIndexChanged="griglia_SelectedIndexChanged">
         <Columns>
             <asp:ButtonField ButtonType="Button" CommandName="Select" Text="Seleziona" />
         </Columns>
     </asp:GridView>
-
-    <p>
-        <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
-
-        <a id="btnInserisci" href="../popup/inserisci/InserisciTipoCommessa.aspx">bottone per InsTipoCom (placeholder)</a>
-        <a id="btnModifica" href="../popup/modifica/ModificaTipoCommessa.aspx">bottone per ModTipoCom (placeholder) </a>
-
-        <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
-
-        <asp:Button ID="aggiornaGriglia" runat="server" Text="Aggiorna Griglia" OnClick="aggiornaGriglia_Click" />
-    </p>
-
 </asp:Content>

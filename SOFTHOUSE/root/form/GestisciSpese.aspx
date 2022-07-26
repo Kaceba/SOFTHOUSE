@@ -9,35 +9,39 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
     <script src="../../JS/JS.js"></script>
     <%--css--%>
-    <%--<link href="../../../CSS/CSS.css" rel="stylesheet" />--%>
+    <link href="../../../CSS/CSS.css" rel="stylesheet" />
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <table>
-        <tr>
-            <td>
-                <asp:GridView id="griglia" runat="server" OnSelectedIndexChanged="griglia_SelectedIndexChanged" DataKeyNames="CodiceSpesa">
-                    <columns>
+    <div id="menu">
+        <div class="contieni_bottoni">
+            <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+            <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciSpese.aspx">Inserisci Dati</a></div>
+            <br />
+            <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaSpese.aspx">Modifica Dati</a></div>
+            <br />
+            <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
+            <div class="bottoni">
+                <asp:Button ID="btnRicarica" CssClass="aggiorna_griglia" runat="server" Text="Aggiorna Griglia" OnClick="btnRicarica_Click" />
+            </div>
+        </div>
+    </div>
 
-                        <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
-                    </columns>
-                </asp:GridView>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
 
-                <a id="btnInserisci" href="../popup/inserisci/InserisciSpese.aspx">bottone per InsSpese (placeholder)</a>
-                <a id="btnModifica" href="../popup/modifica/ModificaSpese.aspx">bottone per ModSpese (placeholder) </a>
-                <a id="btnElimina" href="../popup/elimina/EliminaSpese.aspx">bottone per ElimSpese (placeholder) </a>
 
-                <asp:Button ID="btnRicarica" runat="server" Text="Ricarica griglia" OnClick="btnRicarica_Click" />
-            </td>
-        </tr>
-    </table>
+
+    <asp:GridView id="griglia"  CssClass="griglia" runat="server" OnSelectedIndexChanged="griglia_SelectedIndexChanged" DataKeyNames="CodiceSpesa">
+        <columns>
+            <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
+        </columns>
+    </asp:GridView>
+
+    <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+
+
+
 
 </asp:Content>
 

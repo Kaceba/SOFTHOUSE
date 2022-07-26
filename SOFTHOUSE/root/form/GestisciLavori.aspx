@@ -14,25 +14,21 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <table>
-        <tr>
-            <td>
-                <asp:GridView ID="griglia" runat="server" DataKeyNames="CodiceLavoro" OnSelectedIndexChanged="griglia_SelectedIndexChanged" OnRowDataBound="griglia_RowDataBound">
+    
+    <div id="menu">
+        <div class="contieni_bottoni">
+        <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+        <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciLavori.aspx">inserisci dati</a></div><br />
+        <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaLavori.aspx">modifica dati</a></div><br />
+        <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
+        <div class="bottoni"><asp:Button ID="btnRicarica" CssClass="aggiorna_griglia" runat="server" Text="Aggiorna Griglia" OnClick="btnRicarica_Click" /></div>
+    </div>
+        </div>
+    <%--griglia--%>
+                <asp:GridView ID="griglia" runat="server" DataKeyNames="CodiceLavoro" OnSelectedIndexChanged="griglia_SelectedIndexChanged">
                     <columns>
                         <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
                     </columns>
                 </asp:GridView>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a id="btnInserisci" href="../popup/inserisci/InserisciLavori.aspx">bottone per InsLavori (placeholder)</a>
-                <a id="btnModifica" href="../popup/modifica/ModificaLavori.aspx">bottone per ModLavori (placeholder) </a>
-
-                <asp:Button ID="btnRicarica" runat="server" Text="Ricarica Griglia" OnClick="btnRicarica_Click" />
-            </td>
-        </tr>
-    </table>
-
 </asp:Content>
 

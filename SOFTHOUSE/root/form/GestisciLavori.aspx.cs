@@ -29,8 +29,4 @@ public partial class _Default : System.Web.UI.Page
         Session["CodiceLavoro"] = griglia.SelectedDataKey[0];
     }
 
-    protected void griglia_RowDataBound(object sender, GridViewRowEventArgs e)
-    {
-
-    }
 }

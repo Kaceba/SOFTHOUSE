@@ -14,23 +14,24 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <table>
-        <tr>
-            <td colspan="3">
-                <asp:GridView ID="griglia" runat="server" DataKeyNames="CodiceCommessa" OnSelectedIndexChanged="griglia_SelectedIndexChanged" OnRowDataBound="griglia_RowDataBound">
-                    <Columns>
-                        <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
-                    </Columns>
-                </asp:GridView>
-            </td>
-            <tr>
-                <td colspan="3">
-                    <a id="btnInserisci" href="../popup/inserisci/InserisciCommesse.aspx">bottone per InsCommesse (placeholder)</a>
-                    <a id="btnModifica" href="../popup/modifica/ModificaCommesse.aspx">bottone per ModCommesse (placeholder) </a>
-                    <asp:Button ID="btnRicarica" runat="server" Text="Ricarica griglia" OnClick="btnRicarica_Click" />
-                </td>
-            </tr>
-    </table>
 
+
+    <div id="menu">
+        <div class="contieni_bottoni">
+            <%--Bottoni per interagire con i dati della griglia, utilizzano gli script di jquery--%>
+            <div class="bottoni"><a id="btnInserisci" href="../popup/inserisci/InserisciCommesse.aspx">Inserisci Dati</a></div>
+            <br />
+            <div class="bottoni"><a id="btnModifica" href="../popup/modifica/ModificaCommesse.aspx">Modifica Dati</a></div>
+            <br />
+            <%--Bottone che aggiorna la griglia con i dati inseriti o modificati--%>
+            <div class="bottoni">
+                <asp:Button ID="btnRicarica" CssClass="aggiorna_griglia" runat="server" Text="Ricarica griglia" OnClick="btnRicarica_Click" />
+            </div>
+            <%--griglia--%>
+            <asp:GridView ID="griglia" CssClass="griglia" runat="server" DataKeyNames="CodiceCommessa" OnSelectedIndexChanged="griglia_SelectedIndexChanged" OnRowDataBound="griglia_RowDataBound">
+                <columns>
+                    <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
+                </columns>
+            </asp:GridView>
 </asp:Content>
 
